@@ -1,0 +1,17 @@
+Source: pstack
+Section: devel
+Priority: optional
+Maintainer: lichenggang <lichenggang@deepin.org>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.2
+Homepage: https://github.com/peadar/pstack.git
+Vcs-Browser: https://github.com/peadar/pstack.git
+Vcs-Git: https://github.com/peadar/pstack.git
+
+Package: pstack
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Display stack trace of a running process
+ pstack dumps a stack trace for a process, given the PID of that process.  If
+ the process named is part of a thread group, then all the threads in the group
+ are traced.
